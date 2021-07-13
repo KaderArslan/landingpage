@@ -1,0 +1,284 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body {
+  margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+  }
+
+a{
+  text-decoration:none;
+}
+
+/* font ayarları */
+h1,h2{
+	font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+  font-weight: 501;
+  font-family: 'Roboto', sans-serif;
+}
+p, h6, h4 {
+  font-family: 'Roboto', sans-serif;
+  /* font-weight: 300; */
+}
+.textslideh1{
+  font-size:6vw;
+}
+.textslidehp{
+  font-size: 4vw;
+}
+.textslideh3{
+  font-size: 3vw;
+}
+/* font ayarları */
+
+
+/* scrollbar start */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color:#124379;
+    border-left-color: 1px solid rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1E9BBB;
+}   
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1E9BBB;
+}
+/* scrollbar end */
+
+
+/* proje banner start */
+.slidemargin{
+    margin-top: 40px;
+}
+.slidebuttonmargin{
+    margin-bottom: 50px;
+}
+#header{
+    background-image: url(./images/header.jpg);
+    width:"100%" !important;
+    height:"100%" !important;
+    background-repeat: no-repeat;
+}
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 600px) {
+  #header {
+    background-image: url(./images/mobilimage2.jpg);
+    width:"100%" !important;
+    height:"100%" !important;
+    background-repeat: no-repeat;
+  }
+}
+
+.firstPart.fs-1{
+    font-size: 80px;
+    color: #1D1B18;
+}
+.firstPart .title-small{
+    font-size: 35px;
+    color: #1D1B18;
+}
+.firstPart button{
+    width: 154px;
+    height: 50px;
+    background-color: #DB9E30;
+}
+.firstPart button span{
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.img-dark{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.border-left-proje{
+  border-left: 8px solid #fff;
+}
+.border-left-fotograf-galeri{
+  border-left: 8px solid #124379;
+  margin-bottom: 15px;
+}
+/* proje banner end */
+
+/* proje hakkında start */
+.spor{
+    line-height: 81%;
+    color:#515151;
+}
+.feature-content-area {
+	position: relative;
+	z-index: 101;
+	bottom: 20px;
+	width: 100%;
+	height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+.service-icon {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+.mimarlik{
+    background-color: #fff;
+    color: #04689B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mimarlik:hover{
+    background-color: #04689B;
+    color: #fff !important;
+}
+.movment {
+	transition: 1s all ease;
+    font-family: 'Roboto', sans-serif;
+    font-size:11px;
+}
+.movment:hover {
+	transform: translateY(-15px);
+}
+/* proje hakkında end */
+
+
+/* proje ozellikleri start */
+
+.feature-icon > i {
+	color: #04689B !important;
+	font-size: 10px;
+	height: 40px;
+	width: 40px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50% !important;
+}
+.rounded-circle>i{
+  background-color: #124379;
+  color: #fff !important;
+}
+.rounded-circle>i:hover{
+  color: #1E9BBB !important;
+  transform: rotate(-360deg);
+  transition: 1s all ease;
+  background-color:#fff;
+}
+.shadow-proje-ozellikleri{
+  box-shadow: 1 4px 8px 0 rgba(0, 0, 0, 0.1), 1 6px 20px 0 rgba(0, 0, 0, 1);
+}
+/* proje ozellikleri end */
+
+/* galeri start */
+#pills-home-tab{
+    color: #111;
+    background-color: #fff;
+    border-bottom: #04689B;
+}
+#pills-home-tab:hover{
+    border-bottom: #04689B;
+}
+#pills-profile-tab{
+    color: #111;
+    background-color: #fff;
+    border-bottom: #04689B;
+}
+#pills-profile-tab:hover{
+    border-bottom: #04689B;
+}
+#pills-activite-tab{
+    color: #111;
+    background-color: #fff;
+    border-bottom: #04689B;
+}
+#pills-activite-tab:hover{
+    border-bottom: #04689B;
+}
+#kart{
+	background-color: #fff !important;
+	border:none !important;
+}
+.textgaleri{
+    font-size: 1vw;
+    color: #515151;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.textgalerih1{
+    font-size: 65px;
+    line-height:81%;
+    color: #515151;
+
+}
+.galeriimg{
+    transition: 2s all ease;
+}
+.galeriimg:hover{
+    transform: translateY(-5px);
+}
+.galeributton{
+  color: #515151 !important;
+  background-color:#fff !important;
+  width: 100%;
+}
+.galeributton.active{
+  color:#fff !important;
+  background-color:#1E9BBB !important;
+}
+.galeributton:hover{
+  color: #515151 !important;
+  background-color:#1E9BBB !important;
+}
+.card-bg{
+  background-color: #124379 !important;
+}
+/* zoom */
+.image-box {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+
+}
+.image-box img {
+  max-width: 100%;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+}
+.image-box:hover img {
+  transform: scale(1.1);
+}
+.border-bottom-galeri{
+  border-bottom: 4px solid #124379;
+}
+/* galeri end */
+
+/* footer start */
+.footerbackground{
+  background-color:#1E9BBB;
+}
+.textfooter{
+  font-size:12px;
+  line-height: 81%;;
+}
+.line-iletisim{
+  line-height: 81%;
+}
+/* footer end */
+
+
+/* form start */
+.sticky-sm-top{
+  text-align: center;
+}
+.inputcolor{
+    background: #F1F1F1;
+}
+
+/* form end */
